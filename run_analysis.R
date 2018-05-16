@@ -92,8 +92,6 @@ rm(filelist,td,tf,url1)
     header_desc <- gsub("NA", "", header_desc)
     header_desc[c(555:561)] <-gsub("Mean\\(\\)\\.of\\.Angle\\.\\of\\.", "", header_desc[c(555:561)])
     header_desc[c(1:561)] <-gsub("\\(\\)", "", header_desc[c(1:561)])
-    #header_desc<-as.data.frame(header_desc)
-    #header_desc[] <- lapply(header_desc, as.character)
 
   #cleanup
     rm(dataset_names,dataset_names2,feat_labels,feat_corr,feat_dir,feat_angle,feat_meas,feat_domain)
